@@ -28,7 +28,7 @@ echo "server {
   location / {
     proxy_pass http://192.168.10.100:3000;
   }
-}" >> reverse-proxy.conf
+}" > reverse-proxy.conf
 
 sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
 
